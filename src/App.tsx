@@ -1,19 +1,12 @@
-import {useState} from "react";
-function App() {
-  const [greeting, setGreeting] = useState ({greeting:"Hello", counter: 0});
-  const changeGreeting = () => {
-setGreeting ({ greeting: "good bye", counter: 1})
-  }
-  console.log(greeting);
+import Button from "./Component";
+
+const App = () => {
 return (
-<div>
-  <button onClick={changeGreeting}>Click me</button>
-  {greeting.greeting}
-</div>
-
+  <div> 
+    <Button/>
+  </div>
 );
-
-}
+};
 
 export default App;
 
